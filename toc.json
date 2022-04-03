@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "type": "divider",
+      "title": "APIS"
+    },
+    {
+      "type": "item",
+      "title": "Customer",
+      "uri": "/Customer.json"
+    },
+    {
+      "type": "item",
+      "title": "Customer",
+      "uri": "/Customer.yml"
+    },
+    {
+      "type": "item",
+      "title": "Customer",
+      "uri": "/Customer-2.yml"
+    },
+    {
+      "type": "item",
+      "title": "Customer",
+      "uri": "/Customer-2-2.yml"
+    },
+    {
+      "type": "item",
+      "title": "Customer",
+      "uri": "/Customer-2-2-2.yml"
+    }
+  ]
+}

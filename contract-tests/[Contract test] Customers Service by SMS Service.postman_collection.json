@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "23c582d5-ea1c-42ab-8d26-4aeb363fcb83",
+		"name": "[Contract test] Customers Service by SMS Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Customer By Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Content-Type is JSON\", () => {",
+							"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');",
+							"});",
+							"",
+							"const schema = {",
+							"          ",
+							"            \"type\": \"object\",",
+							"            \"required\": [ \"fistName\", \"lastName\", \"phone\"],",
+							"            \"properties\": {",
+							"                \"fistName\": {",
+							"                    \"type\": \"string\",",
+							"                    \"description\": \"First name\"",
+							"                },",
+							"                \"lastName\": {",
+							"                    \"type\": \"string\",",
+							"                    \"description\": \"Last name\"",
+							"                },",
+							"                \"phone\": {",
+							"                    \"type\": \"string\",",
+							"                    \"description\": \"Phone\"",
+							"                }",
+							"            }",
+							"        ",
+							"    ",
+							"};",
+							"",
+							"pm.test(\"Validate schema\", () => {",
+							"    // console.log(schema);",
+							"    pm.response.to.have.jsonSchema(schema);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/customers/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

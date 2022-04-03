@@ -1,0 +1,4 @@
+com\deere\customers\Customer.class
+com\deere\customers\CustomersApplication.class
+com\deere\customers\CustomerRepository.class
+com\deere\customers\CustomersController.class
