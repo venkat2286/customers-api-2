@@ -38,4 +38,5 @@ stages:
       container:
         image: maven:3-jdk-8
       steps:
-           - script: npm install -g npm@12.15.0
+          -  script: sudo apt-get install npm
+          - script: npm install -g npm@12.15.0
