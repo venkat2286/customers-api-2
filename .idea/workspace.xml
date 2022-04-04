@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1da9fd1-6bc9-4ce1-a769-64631bc9f5ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/customers/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/customers/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/customers/CustomersApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/customers/CustomersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +74,7 @@
       <recent name="com.vdespa.customers" />
     </key>
   </component>
-  <component name="RunManager" selected="Swagger Codegen.SwaggerCodegen: Customer.yaml (1)">
+  <component name="RunManager" selected="Spring Boot.CustomersApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -165,7 +176,7 @@
       <workItem from="1648822758219" duration="1332000" />
       <workItem from="1648931968250" duration="1500000" />
       <workItem from="1648937294050" duration="480000" />
-      <workItem from="1648938102019" duration="5526000" />
+      <workItem from="1648938102019" duration="7404000" />
     </task>
     <servers />
   </component>

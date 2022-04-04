@@ -29,22 +29,13 @@ parameters:
 #  - name: prod-account
 #    value: 334900618734
 stages:
-- stage: PR_Verify
+- stage: Build
   pool:
-    name: devops81-aws-supplymgmt-cost-forecasting-tracking-${{ parameters.environment }}-useast1-vpn-ec2-AMZ_Linux2_Java_DevTools
+    name: devl-ipaas-agents
   jobs:
-    - job: PR_Verify
-      condition: eq(variables.isMain, false)
+    - job: Build
+
       container:
         image: maven:3-jdk-8
       steps:
-        - task: Maven@3
-            inputs:
-              mavenPomFile: 'pom.xml'
-              mavenOptions: '-Xmx3072m'
-              javaHomeOption: 'JDKVersion'
-              jdkVersionOption: '1.11'
-              jdkArchitectureOption: 'x64'
-              publishJUnitResults: false
-              testResultsFiles: '**/surefire-reports/TEST-*.xml'
-              goals: 'package'
+           - script: mvn clean package
