@@ -12,14 +12,18 @@ parameters:
       - prod
 
 variables:
+  - name: imageName
+    value:'customers-api'
+
+# - name: imageName2
+#   value: 'customers-api'
+
 #  - name: MAVEN_CACHE_FOLDER
 #    value: $(Pipeline.Workspace)/.m2/repository
 #  - name: isMain
 #    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
 #  - name: MAVEN_OPTS
 #    value: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
-  - name: imageName
-  value: 'customers-api'
 #  - name: imageTag
 #    value: 'mypfpapi-$(Build.SourceVersion)'
 #  - name: stackName
