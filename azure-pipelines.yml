@@ -11,7 +11,7 @@ parameters:
       - devl
       - prod
 
-#variables:
+variables:
 #  - name: MAVEN_CACHE_FOLDER
 #    value: $(Pipeline.Workspace)/.m2/repository
 #  - name: isMain
