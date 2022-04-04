@@ -18,8 +18,8 @@ parameters:
 #    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
 #  - name: MAVEN_OPTS
 #    value: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
-#  - name: imageName
-#    value: 'myprojects-fp-api'
+  - name: imageName
+   value: 'customers-api'
 #  - name: imageTag
 #    value: 'mypfpapi-$(Build.SourceVersion)'
 #  - name: stackName
