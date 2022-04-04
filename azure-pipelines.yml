@@ -28,30 +28,57 @@ parameters:
 #    value: 278425112560
 #  - name: prod-account
 #    value: 334900618734
+# stages:
+# - stage: Build
+#   pool:
+#     name: devl-ipaas-agents
+#   jobs:
+#     - job: Build
+
+#       container:
+#         image: maven:3-jdk-8
+#       steps:
+#       - task: Maven@3
+#         inputs:
+#           mavenPomFile: 'pom.xml'
+#           mavenOptions: '-Xmx3072m'
+#           javaHomeOption: 'JDKVersion'
+#           jdkVersionOption: '1.8'
+         
+         
+#           goals: 'package'
+
+#       - task: Maven@3
+#         displayName: Build Docker image
+#         inputs:
+#           mavenPomFile: 'pom.xml'
+#           goals: 'spring-boot:build-image'
+#           publishJUnitResults: false
+#           jdkVersionOption: '1.11'
 stages:
-- stage: Build
+- stage: PR_Verify
   pool:
     name: devl-ipaas-agents
   jobs:
-    - job: Build
-
+    - job: PR_Verify
+      
       container:
         image: maven:3-jdk-8
       steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: 'pom.xml'
-          mavenOptions: '-Xmx3072m'
-          javaHomeOption: 'JDKVersion'
-          jdkVersionOption: '1.8'
-         
-         
-          goals: 'package'
+      -
 
+      -
       - task: Maven@3
-        displayName: Build Docker image
         inputs:
-          mavenPomFile: 'pom.xml'
-          goals: 'spring-boot:build-image'
-          publishJUnitResults: false
-          jdkVersionOption: '1.11'
+          goals: 'install'
+          mavenPomFile: pom.xml
+          mavenOptions: '$(MAVEN_OPTS)'
+          options: '-s $(settings.secureFilePath) -gs $(settings.secureFilePath) -B -e'
+          javaHomeOption: 'JDKVersion'
+          mavenVersionOption: 'Default'
+          mavenAuthenticateFeed: false
+          effectivePomSkip: false
+          sonarQubeRunAnalysis: false
+          isJacocoCoverageReportXML: false
+          sqMavenPluginVersionChoice: 'pom'
+  displayName: 'PR Verify'
