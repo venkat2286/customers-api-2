@@ -38,5 +38,6 @@ stages:
       container:
         image: maven:3-jdk-8
       steps:
-          -  script: sudo apt-get install npm
-          - script: npm install -g npm@12.15.0
+          -  script: mvn clean package
+          -  script: java -jar target/ROOT-1.0.jar
+          
