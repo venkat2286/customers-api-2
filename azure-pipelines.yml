@@ -65,9 +65,9 @@ stages:
       container:
         image: maven:3-jdk-8
       steps:
-      -
+      
 
-      -
+      
       - task: Maven@3
         inputs:
           goals: 'install'
