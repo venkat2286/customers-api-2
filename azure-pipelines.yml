@@ -19,7 +19,7 @@ parameters:
 #  - name: MAVEN_OPTS
 #    value: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
   - name: imageName
-   value: 'customers-api'
+  -value: 'customers-api'
 #  - name: imageTag
 #    value: 'mypfpapi-$(Build.SourceVersion)'
 #  - name: stackName
