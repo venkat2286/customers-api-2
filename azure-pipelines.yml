@@ -1,96 +1,49 @@
-trigger:
-- master
-pr:
-- master
-
-parameters:
-  - name: environment
-    type: string
+--- 
+parameters: 
+  - 
     default: devl
-    values:
+    name: environment
+    type: string
+    values: 
       - devl
       - prod
-
-variables:
-  - name: imageName
-    value:'customers-api'
-
-# - name: imageName2
-#   value: 'customers-api'
-
-#  - name: MAVEN_CACHE_FOLDER
-#    value: $(Pipeline.Workspace)/.m2/repository
-#  - name: isMain
-#    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
-#  - name: MAVEN_OPTS
-#    value: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
-#  - name: imageTag
-#    value: 'mypfpapi-$(Build.SourceVersion)'
-#  - name: stackName
-#    value: 'myprojects-fp-api-stack'
-#  - name: devl-account
-#    value: 278425112560
-#  - name: prod-account
-#    value: 334900618734
-# stages:
-# - stage: Build
-#   pool:
-#     name: devl-ipaas-agents
-#   jobs:
-#     - job: Build
-
-#       container:
-#         image: maven:3-jdk-8
-#       steps:
-#       - task: Maven@3
-#         inputs:
-#           mavenPomFile: 'pom.xml'
-#           mavenOptions: '-Xmx3072m'
-#           javaHomeOption: 'JDKVersion'
-#           jdkVersionOption: '1.8'
-         
-         
-#           goals: 'package'
-
-#       - task: Maven@3
-#         displayName: Build Docker image
-#         inputs:
-#           mavenPomFile: 'pom.xml'
-#           goals: 'spring-boot:build-image'
-#           publishJUnitResults: false
-#           jdkVersionOption: '1.11'
-stages:
-- stage: PR_Verify
-  pool:
-    name: devl-ipaas-agents
-  jobs:
-    - job: PR_Verify
-      
-      container:
-        image: maven:3-jdk-8
-      steps:
-      
-
-      
-      - task: Maven@3
-        inputs:
-          goals: 'install'
-          mavenPomFile: pom.xml
-          javaHomeOption: 'JDKVersion'
-          mavenVersionOption: 'Default'
-          mavenAuthenticateFeed: false
-          effectivePomSkip: false
-          sonarQubeRunAnalysis: false
-          isJacocoCoverageReportXML: false
-          sqMavenPluginVersionChoice: 'pom'
-
-      - task: Docker@2
-        displayName: 'Docker Build'
-        inputs:
-          repository: $(imageName)
-          containerRegistry: docker-deere
-          command: build
-          tags: |
-            $(imageTag)
-            
-  displayName: 'PR Verify'
+pr: 
+  - master
+stages: 
+  - 
+    displayName: "PR Verify"
+    jobs: 
+      - 
+        container: 
+          image: "maven:3-jdk-8"
+        job: PR_Verify
+        steps: 
+          - 
+            inputs: 
+              effectivePomSkip: false
+              goals: install
+              isJacocoCoverageReportXML: false
+              javaHomeOption: JDKVersion
+              mavenAuthenticateFeed: false
+              mavenPomFile: pom.xml
+              mavenVersionOption: Default
+              sonarQubeRunAnalysis: false
+              sqMavenPluginVersionChoice: pom
+            task: Maven@3
+          - 
+            displayName: "Docker Build"
+            inputs: 
+              command: build
+              containerRegistry: docker-deere
+              repository: $(imageName)
+              tags: "$(imageTag)\n"
+            task: Docker@2
+    pool: 
+      name: devl-ipaas-agents
+    stage: PR_Verify
+trigger: 
+  - master
+variables: 
+  - 
+    name: imageName
+  - "value:'customers-api'"
