@@ -11,55 +11,6 @@ parameters:
       - devl
       - prod
 
-variables:
-  - name: imageName
-    value:'customers-api'
-
-# - name: imageName2
-#   value: 'customers-api'
-
-#  - name: MAVEN_CACHE_FOLDER
-#    value: $(Pipeline.Workspace)/.m2/repository
-#  - name: isMain
-#    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
-#  - name: MAVEN_OPTS
-#    value: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
-#  - name: imageTag
-#    value: 'mypfpapi-$(Build.SourceVersion)'
-#  - name: stackName
-#    value: 'myprojects-fp-api-stack'
-#  - name: devl-account
-#    value: 278425112560
-#  - name: prod-account
-#    value: 334900618734
-# stages:
-# - stage: Build
-#   pool:
-#     name: devl-ipaas-agents
-#   jobs:
-#     - job: Build
-
-#       container:
-#         image: maven:3-jdk-8
-#       steps:
-#       - task: Maven@3
-#         inputs:
-#           mavenPomFile: 'pom.xml'
-#           mavenOptions: '-Xmx3072m'
-#           javaHomeOption: 'JDKVersion'
-#           jdkVersionOption: '1.8'
-         
-         
-#           goals: 'package'
-
-#       - task: Maven@3
-#         displayName: Build Docker image
-#         inputs:
-#           mavenPomFile: 'pom.xml'
-#           goals: 'spring-boot:build-image'
-#           publishJUnitResults: false
-#           jdkVersionOption: '1.11'
-
 stages:
 - stage: PR_Verify
   pool:
@@ -88,10 +39,10 @@ stages:
       - task: Docker@2
         displayName: 'Docker Build'
         inputs:
-          repository: $(imageName)
+          repository: 'customers-api'
           containerRegistry: docker-deere
           command: build
           tags: |
-            $(imageTag)
+            'customers-api-image'
             
   displayName: 'PR Verify'
