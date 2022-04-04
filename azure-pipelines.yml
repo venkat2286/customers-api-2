@@ -73,7 +73,7 @@ stages:
           goals: 'install'
           mavenPomFile: pom.xml
           mavenOptions: '$(MAVEN_OPTS)'
-          options: '-s $(settings.secureFilePath) -gs $(settings.secureFilePath) -B -e'
+          
           javaHomeOption: 'JDKVersion'
           mavenVersionOption: 'Default'
           mavenAuthenticateFeed: false
