@@ -65,6 +65,7 @@ jobs:
              
     - name: Verify specification
       run: |
-             curl -I http://localhost:8080/customers
+             curl -I http://127.0.0.1:4011/customers
+
              
              
