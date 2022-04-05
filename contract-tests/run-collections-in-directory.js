@@ -14,7 +14,7 @@ fs.readdir('./contract-tests', function (err, files) {
     files.forEach(function (file) {
         newman.run({
             collection: require(`${__dirname}/${file}`),
-            environment: './contract-tests/Customers Service Github Docker.postman_environment.json',
+            environment: './contract-tests/environment.json',
             reporters: 'cli'
         }).on('start', function (err, args) { // on start of run, log to console
             console.log(`Running the collection ${file}`);
