@@ -45,7 +45,9 @@ jobs:
         node-version: 12.15.0
 #         cache: npm
    
-  
+    - name: check node version
+      run: |
+             node  
   
     - name: Contract Tests
       run: |
