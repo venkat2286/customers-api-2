@@ -65,7 +65,7 @@ jobs:
              
     - name: Verify specification
       run: |
-             curl -I http://127.0.0.1:4011/customers
+             curl http://127.0.0.1:4011/customers
 
              
              
