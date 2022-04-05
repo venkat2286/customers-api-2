@@ -37,7 +37,9 @@ jobs:
       run: |
            java -jar target/customers-api-0.0.1-SNAPSHOT.jar &
            sleep 1
-          
+    - name: Contract Tests
+      run: |
+           curl --silent http://localhost:8080/healthz             
 
     - name: Setup Node 12.15.0
       uses: actions/setup-node@v3
@@ -45,12 +47,14 @@ jobs:
         node-version: 12.15.0
 #         cache: npm
    
-    - name: check node version
+    - name: Check and confirm node installation
       run: |
              npm -v  
   
-    - name: Contract Tests
+    - name: Install Prism
       run: |
-        
-           
-           curl --silent http://localhost:8080/healthz   
+             npm install -g @stoplight/prism-cli  
+  
+    - name: Check and confirm prism installation
+      run: |
+             prism --version  
