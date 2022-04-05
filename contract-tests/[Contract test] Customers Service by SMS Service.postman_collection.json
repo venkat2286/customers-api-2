@@ -23,7 +23,7 @@
 							"const schema = {",
 							"          ",
 							"            \"type\": \"object\",",
-							"            \"required\": [ \"fistName\", \"lastName\", \"phone\"],",
+							"            \"required\": [ \"firstName\", \"lastName\", \"phone\"],",
 							"            \"properties\": {",
 							"                \"fistName\": {",
 							"                    \"type\": \"string\",",
