@@ -57,5 +57,5 @@ jobs:
   
     - name: Run the contract tests using newman
       run: |
-             newman run contract-tests/[Contract test] Customers Service by Billing.postman_collection.json -e contract-tests/environment.json --bail
+             newman run contract-tests/run-collections-in-directory.json -e contract-tests/environment.json --bail
              
