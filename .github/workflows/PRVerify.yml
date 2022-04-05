@@ -5,9 +5,9 @@ name: PR Verify
 
 on:
   push:
-    branches: [ master1 ]
+    branches: [ master ]
   pull_request:
-    branches: [ master1 ]
+    branches: [ master ]
 
 jobs:
   build:
