@@ -37,6 +37,4 @@ jobs:
       run: |
            java -jar target/customers-api-0.0.1-SNAPSHOT.jar &
            sleep 30
-           curl http://localhost:8080/healthz
-
-    
+           curl --silent http://localhost:8080/healthz   
