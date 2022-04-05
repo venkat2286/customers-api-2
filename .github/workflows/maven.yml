@@ -47,7 +47,7 @@ jobs:
    
     - name: check node version
       run: |
-             node  
+             npm -v  
   
     - name: Contract Tests
       run: |
