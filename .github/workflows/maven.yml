@@ -44,7 +44,7 @@ jobs:
       with:
         node-version: 12.15.0
         cache: npm
-    - run: node
+   
   
   
     - name: Contract Tests
