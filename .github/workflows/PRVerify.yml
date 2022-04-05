@@ -67,13 +67,8 @@ jobs:
       id: get_response
       shell: pwsh
       run: |
-             curl http://127.0.0.1:4011/customers
-              $lineRate =curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:4011/customers
-              Write-Output "::set-output name=lineRate::$lineRate"
-              if(lineRate != 200){
-              core.setFailed('Coverage test below tolerance')
-
-              }
+             RESPONSE= $(curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:4011/customers)
+               echo $RESPONSE
               
 
              
