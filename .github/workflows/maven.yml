@@ -35,6 +35,8 @@ jobs:
    
     - name: Run the springboot
       run: |
-           java -jar target/customers-api-0.0.1-SNAPSHOT.jar
-           curl -I http://localhost:8080/customers
+           java -jar target/customers-api-0.0.1-SNAPSHOT.jar &
+           sleep 30
+           curl --silent http://localhost:5000/actuator/health 2>&1 | grep -q 'UP'
+
     
