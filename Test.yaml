@@ -56,10 +56,6 @@ components:
       title: Customer
       type: object
       properties:
-        myid:
-          type: number
-        yourid:
-          type: number
         firstName:
           type: string
         lastName:
