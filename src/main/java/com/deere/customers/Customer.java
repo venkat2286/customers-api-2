@@ -1,7 +1,7 @@
 package com.deere.customers;
 
 public class Customer {
-    long id;
+    long customerId;
     String firstName;
     String lastName;
     String title;
