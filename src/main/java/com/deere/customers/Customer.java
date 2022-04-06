@@ -10,7 +10,7 @@ public class Customer {
     String email;
 
     public Customer(long customerId, String firstName, String lastName, String title, String gender, String phone, String email) {
-        this.customerId = id;
+        this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.title = title;

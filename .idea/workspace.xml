@@ -6,19 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f1da9fd1-6bc9-4ce1-a769-64631bc9f5ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/connectioninfo/ConnectivityInformationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/customers/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/customers/CustomerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/customers/CustomersApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deere/customers/CustomersController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,17 +62,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CustomersApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CustomersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="customers-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.deere.customers.CustomersApplication" />
@@ -142,6 +118,11 @@
       <option name="specificationPath" value="C:\Users\vm72927\OneDrive-Deere&amp;Co\OneDrive - Deere &amp; Co\Documents\codebackup\poc\java\springboot\newman-java\customers-api-2\Customer.yaml" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.CustomersApplication" />
+      <item itemvalue="Swagger Codegen.SwaggerCodegen: Customer.yaml" />
+      <item itemvalue="Swagger Codegen.SwaggerCodegen: Customer.yaml (1)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">

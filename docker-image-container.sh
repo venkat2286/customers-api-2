@@ -1,0 +1,67 @@
+echo "********HELLO VENKAT ! I AM GOING TO STOP THE CONTAINER"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+docker container stop mai_container
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "*********HELLO VENKAT ! STOPPING THE CONTAINER  COMPLETED"
+echo "*********HELLO VENKAT ! I AM GOING TO REMOVE THE CONTAINER"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+
+docker container rm mai_container
+
+echo ""
+echo ""
+echo ""
+echo "HELLO VENKAT ! REMOVING THE CONTAINER COMPLETED"
+echo "HELLO VENKAT ! I AM GOING TO REMOVEE THE PROJECT"
+echo ""
+echo ""
+echo ""
+
+
+docker rmi mai_image
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "HELLO VENKAT ! IMAGE WAS REMOVED "
+echo "HELLO VENKAT ! GOING TO CREATE IMAGE"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+
+docker build . -t mai_image
+
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "HELLO VENKAT ! CREATION OF IMAGE COMPLETED"
+echo "HELLO VENKAT ! I AM GOING TO RUN THE CONTAINER"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+docker run -p 8080:8080  --name=mai_container mai_image
+
