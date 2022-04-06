@@ -56,7 +56,7 @@ components:
       title: Customer
       type: object
       properties:
-        id:
+        id2:
           type: number
         firstName:
           type: string
