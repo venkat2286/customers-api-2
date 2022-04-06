@@ -1,6 +1,6 @@
 package com.deere.customers;
 
-public class Customer {
+public class Customer2 {
     long id;
     String firstName;
     String lastName;
@@ -9,7 +9,7 @@ public class Customer {
     String phone;
     String email;
 
-    public Customer(long id, String firstName, String lastName, String title, String gender, String phone, String email) {
+    public Customer2(long id, String firstName, String lastName, String title, String gender, String phone, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
