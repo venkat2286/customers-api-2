@@ -8,8 +8,10 @@ public class Customer2 {
     String gender;
     String phone;
     String email;
+    String city;
 
-    public Customer2(long id, String firstName, String lastName, String title, String gender, String phone, String email) {
+
+    public Customer2(long id, String firstName, String lastName, String title, String gender, String phone, String email, String city) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -17,8 +19,8 @@ public class Customer2 {
         this.gender = gender;
         this.phone = phone;
         this.email = email;
+        this.city = city;
     }
-
 
     public long getId() {
         return id;
@@ -74,5 +76,13 @@ public class Customer2 {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }

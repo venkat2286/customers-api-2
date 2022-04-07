@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1da9fd1-6bc9-4ce1-a769-64631bc9f5ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deere/customers/CustomerRepository2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deere/customers/CustomersController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deere/customers/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deere/customers/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deere/customers/Customer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deere/customers/Customer2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deere/customers/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deere/customers/CustomersController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +63,24 @@
       <recent name="com.deere" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.deere.customers" />
       <recent name="com.vdespa.customers" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CustomersApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="customers-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.deere.customers.CustomersApplication" />
