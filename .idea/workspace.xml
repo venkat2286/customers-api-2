@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1da9fd1-6bc9-4ce1-a769-64631bc9f5ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ValidateSpecification.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ValidateSpecification.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Test.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
