@@ -18,18 +18,27 @@ public class CustomersController {
         return repository.findAll();
     }
 
-    @GetMapping(value = "customers/{id}")
-    public ResponseEntity<Customer> getCustomerById(@PathVariable("id") long id) {
-        Customer customer = repository.findById(id);
-        System.out.println(customer);
-        return new ResponseEntity<Customer>(customer, HttpStatus.OK);
-    }
+
 
     @PostMapping(value = "customer")
     public ResponseEntity<Customer>saveCustomer(@RequestBody Customer customer) throws Exception{
         Customer customer1 = repository.saveCustomer(customer);
         return new ResponseEntity<Customer>(customer1, HttpStatus.OK);
     }
+
+     @GetMapping(value = "customers/{id}")
+    public ResponseEntity<Customer> getCustomerById(@PathVariable("id") long id) {
+        Customer customer = repository.findById(id);
+        System.out.println(customer);
+        return new ResponseEntity<Customer>(customer, HttpStatus.OK);
+    }
+
+
+
+
+
+
+
 //
 //    @GetMapping(value = "/customer")
 //    public ResponseEntity<List<Customer>> getCustomerByName(@RequestParam(required = false) String name) {
