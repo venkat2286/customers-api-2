@@ -72,3 +72,5 @@ components:
           type: string
         email:
           type: string
+      required:
+        - myid
