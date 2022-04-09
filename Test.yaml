@@ -3,9 +3,7 @@ info:
   title: Customer.yml
   version: '1.0'
 servers:
-  - url: 'http://cusomter-api.deere.com'
-#  -  url: 'http://localhost:8080'
-
+  - url: 'http://localhost:8080'
 paths:
   /customers:
     get:
@@ -58,7 +56,9 @@ components:
       title: Customer
       type: object
       properties:
-        id:
+        myid:
+          type: number
+        yourid:
           type: number
         firstName:
           type: string
