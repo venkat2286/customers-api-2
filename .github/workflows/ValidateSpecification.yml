@@ -70,3 +70,4 @@ jobs:
           echo "GET METHOD: List of customers"
           curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:4011/customers
           curl http://127.0.0.1:4011/customers
+          curl http://127.0.0.1:4011/customers?__server=http://customer-api.deere.com
