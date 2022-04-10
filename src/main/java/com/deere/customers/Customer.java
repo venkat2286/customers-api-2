@@ -1,7 +1,7 @@
 package com.deere.customers;
 
 public class Customer {
-    long id;
+    long customerId;
     String firstName;
     String lastName;
     String title;
@@ -9,8 +9,8 @@ public class Customer {
     String phone;
     String email;
 
-    public Customer(long id, String firstName, String lastName, String title, String gender, String phone, String email) {
-        this.id = id;
+    public Customer(long customerId, String firstName, String lastName, String title, String gender, String phone, String email) {
+        this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.title = title;
@@ -20,12 +20,12 @@ public class Customer {
     }
 
 
-    public long getId() {
-        return id;
+    public long getcustomerId() {
+        return customerId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setcustomerId(long customerId) {
+        this.customerId = customerId;
     }
 
     public String getFirstName() {

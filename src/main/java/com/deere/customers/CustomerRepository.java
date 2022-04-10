@@ -59,7 +59,7 @@ public class CustomerRepository {
 
 
     public Customer saveCustomer(Customer customer) throws Exception{
-      customer.setId(customerId);
+      customer.setcustomerId(customerId);
        customerList.add(customer);
        customerId++;
       return customer;
