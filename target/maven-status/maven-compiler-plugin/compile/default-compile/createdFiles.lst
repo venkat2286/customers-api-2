@@ -1,9 +1,0 @@
-com\deere\connectioninfo\ConnectivityInformationData.class
-com\deere\customers\CustomersController.class
-com\deere\connectioninfo\ConnectivityInformationController.class
-com\deere\customers\Customer.class
-com\deere\connectioninfo\ConnectivityInformationDetails.class
-com\deere\connectioninfo\ConnectivityInformationServiceImpl.class
-com\deere\customers\CustomersApplication.class
-com\deere\connectioninfo\ConnectivityInformationService.class
-com\deere\customers\CustomerRepository.class
