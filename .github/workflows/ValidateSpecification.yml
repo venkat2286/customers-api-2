@@ -60,7 +60,7 @@ jobs:
           prism --version
       - name: Start prism proxy server
         run: |
-          prism proxy -p 4011 --errors Customer.yaml http://localhost:8080 &
+          prism proxy -p 4011 --errors CustomerInfo.yaml http://localhost:8080 &
           sleep 1
 
       - name: Verify  specification
