@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f1da9fd1-6bc9-4ce1-a769-64631bc9f5ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pipelines" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -51,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vm72927\OneDrive-Deere&amp;Co\OneDrive - Deere &amp; Co\Documents\codebackup\poc\java\springboot\newman-java\customers-api-2\pipelines" />
       <recent name="C:\Users\vm72927\OneDrive-Deere&amp;Co\OneDrive - Deere &amp; Co\Documents\codebackup\poc\java\springboot\newman-java\customers-api-2" />
       <recent name="C:\Users\vm72927\OneDrive-Deere&amp;Co\OneDrive - Deere &amp; Co\Documents\codebackup\poc\java\springboot\newman-java\customers-api -2\src\main\java\com\deere\customers" />
       <recent name="C:\Users\vm72927\OneDrive-Deere&amp;Co\OneDrive - Deere &amp; Co\Documents\codebackup\poc\java\springboot\newman-java\customers-api -2\src\main\java\com\deere\customers2" />
@@ -171,7 +173,7 @@
       <workItem from="1648931968250" duration="1500000" />
       <workItem from="1648937294050" duration="480000" />
       <workItem from="1648938102019" duration="7404000" />
-      <workItem from="1649525860118" duration="10807000" />
+      <workItem from="1649525860118" duration="11334000" />
     </task>
     <servers />
   </component>
