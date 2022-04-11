@@ -4,7 +4,6 @@ info:
   version: '1.0'
 servers:
   - url: 'http://localhost:8080'
-  - url: 'http://customer-api.deere.com'
     description: ''
 paths:
   /customers:
